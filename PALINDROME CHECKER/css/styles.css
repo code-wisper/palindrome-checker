@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #5b5ea6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 560px;
+  background-color: #fff;
+  padding: 1.7rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .container--width {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+
+header h1 {
+  font-size: 1.3rem; /* subject to change */
+  font-weight: 500;
+}
+
+header p {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  color: #474747;
+}
+
+form {
+  margin: 1.2rem 0 1.5rem;
+}
+
+form :where(input, button) {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+
+form input {
+  font-size: 1rem;
+  border: 1px solid #999;
+}
+
+form input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+form button {
+  opacity: 0.7;
+  font-size: 1rem;
+  background-color: #5b5ea6;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  pointer-events: none;
+}
+
+form button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.info-text {
+  display: none;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+.info-text span {
+  color: #5b5ea6;
+}
